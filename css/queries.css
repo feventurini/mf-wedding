@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 1024px) {
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 60%;
     }
 }
 
@@ -25,7 +25,7 @@
     }
 
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 60%;
     }
 
     .header-nav {
@@ -216,16 +216,6 @@
         margin-top: 0;
     }
 
-    .events .leftcol {
-        padding: 0 15px;
-        margin-bottom: 15px;
-        border-right: none;
-    }
-
-    .events .rightcol {
-        padding: 0 20px;
-    }
-    
     #eng-pics .img-wrap {
         border-radius: 0;
     }
@@ -254,7 +244,7 @@
 
 @media screen and (max-width: 640px) {
     .hero .hero-content {
-        padding-top: 100%;
+        padding-top: 75%;
     }
 
     #eng-pics .img-wrap i {
@@ -287,6 +277,10 @@
 
     footer .footer-links {
         margin: 50px 0 50px 0;
+    }
+    
+    embedded-map {
+        padding: 30px;
     }
 
 }

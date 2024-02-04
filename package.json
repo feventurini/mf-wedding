@@ -1,23 +1,21 @@
 {
-  "name": "wedding-website",
+  "name": "wedding",
   "version": "1.0.1",
-  "description": "A wedding website with loads of features.",
+  "description": "A wedding website with loads of features. Forked from: https://github.com/rampatra/wedding-website",
   "main": "npmfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:rampatra/wedding-website.git"
+    "type": "git"
   },
   "keywords": [
     "wedding",
     "template",
     "website template"
   ],
-  "author": "Ram Patra",
+  "author": "Federico Venturini",
   "license": "GPL-3.0",
-  "homepage": "https://github.com/rampatra/wedding-website",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-rename": "^1.4.0",
@@ -28,6 +26,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "font-awesome": "^4.7.0",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "md5": "^2.3.0"
   }
 }
