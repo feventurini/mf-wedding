@@ -1,5 +1,6 @@
 /********************** Localization **********************/
 
+var current_lang = "en";
 var dictionary = {
     "en": {
         "_events": "Events",
@@ -25,15 +26,16 @@ var dictionary = {
         "_loc2_blurb": "Via Riva di Reno, 77, Bologna",
         "_rsvp_header": "RSVP?",
         "_rsvp_blurb": "We would greatly appreciate if you could RSVP before August 2024",
-        "_email": "Your email",
-        "_plusones": "Husband/Wicsacasfe or kids",
+        // "_email": "Your email",
+        "_plusones": "Husband/Wife or kids",
         "_name": "Your name",
         "_code": "Invite code",
         "_confirm": "Yes, that's me!",
         "_invalid_code": "Sorry! Your invite code is incorrect.",
         "_server_issue": "Sorry! There is an issue with the server.",
         "_success": "Thank you!",
-        "_success_blurb": "We are glad to see you join us on our big day." 
+        "_success_blurb": "We are glad to see you join us on our big day.",
+        "_loading": "Saving, please wait a moment!"
     },
     "it": {
         "_events": "Eventi",
@@ -59,7 +61,7 @@ var dictionary = {
         "_loc2_blurb": "Via Riva di Reno, 77, Bologna",
         "_rsvp_header": "RSVP?",
         "_rsvp_blurb": "Apprezzeremmo una risposta prima di Agosto 2024",
-        "_email": "La tua email",
+        // "_email": "La tua email",
         "_plusones": "Compagno/a",
         "_name": "Il tuo nome",
         "_code": "Il tuo codice invitato",
@@ -67,7 +69,8 @@ var dictionary = {
         "_invalid_code": "Mi dispiace! Il tuo codice invitato è errato.",
         "_server_issue": "Mi dispiace! C'è un problema con il server.",
         "_success": "Grazie!",
-        "_success_blurb": "Ti aspettiamo al nostro matrimonio." 
+        "_success_blurb": "Ti aspettiamo al nostro matrimonio.",
+        "_loading": "Aspetta solo un secondo, sto salvando!"
     },
     "pt": {
         "_events": "O Evento",
@@ -93,7 +96,7 @@ var dictionary = {
         "_loc2_blurb": "Via Riva di Reno, 77, Bologna",
         "_rsvp_header": "RSVP?",
         "_rsvp_blurb": "Por favor, confirme antes do dia 1 de Agosto 2024",
-        "_email": "Seu e-mail",
+        // "_email": "Seu e-mail",
         "_plusones": "Acompanhante (s)",
         "_name": "O seu nome",
         "_code": "Código do convidado",
@@ -101,7 +104,8 @@ var dictionary = {
         "_invalid_code": "Desculpe! O seu código está incorreto.",
         "_server_issue": "Desculpe! Estamos com um problema no sistema.",
         "_success": "Grazie Mille!",
-        "_success_blurb": "Estamos muito contentes de ter você no nosso dia especial." 
+        "_success_blurb": "Estamos muito contentes de ter você no nosso dia especial.",
+        "_loading": "Aguarde um momento!"
     }
 };
 
@@ -259,17 +263,21 @@ $(document).ready(function () {
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
-        var data = $(this).serialize();
-
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
-
-        if (md5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && md5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<span data-localized="_invalid_code"></span>'));
+        
+        $('#alert-wrapper').html(alert_markup('info', dictionary[current_lang]['_loading']));
+        var md5_hash = md5($('#invite_code').val());
+                
+        if (md5_hash !== 'a9dd14d824822d6d78d0fe3e55dbd7fb' && md5_hash !== '2cbca44843a864533ec05b321ae1f9d1') {
+            $('#alert-wrapper').html(alert_markup('danger', dictionary[current_lang]['_invalid_code']));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec', data)
-                .done(function (data) {
+            var data = {
+                'name': $(this).find('input[name="name"]').val(),
+                'extras': $(this).find('input[name="extras"]').val(),
+                'invite_code': md5_hash,
+            };
 
+            $.post('https://script.google.com/macros/s/AKfycbwuHpPyRUo5paqOWbDc-rwG3_wVHxb-IhqkCgWo4udo2K4VwgmRcUF__OO-P3d6gyrZ/exec', data)
+                .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
                         $('#alert-wrapper').html(alert_markup('danger', data.message));
@@ -280,7 +288,7 @@ $(document).ready(function () {
                 })
                 .fail(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<span data-localized="_server_issue"></span>'));
+                    $('#alert-wrapper').html(alert_markup('danger', dictionary[current_lang]['_server_issue']));
                 });
         }
     });
@@ -297,6 +305,7 @@ $(document).ready(function () {
     $("#lang").on("change", function () {
         var language = $(this).val().toLowerCase();
         if (dictionary.hasOwnProperty(language)) {
+            current_lang = language;
             set_lang(dictionary[language]);
         }
     });
@@ -304,6 +313,7 @@ $(document).ready(function () {
     if (navigator.language) {
         var language = navigator.language.split('-')[0]
         if (dictionary.hasOwnProperty(language)) {
+            current_lang = language;
             set_lang(dictionary[language]);
         }
     } else {
