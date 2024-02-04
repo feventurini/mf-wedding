@@ -301,7 +301,14 @@ $(document).ready(function () {
         }
     });
 
-    set_lang(dictionary.en);
+    if (navigator.language) {
+        var language = navigator.language.split('-')[0]
+        if (dictionary.hasOwnProperty(language)) {
+            set_lang(dictionary[language]);
+        }
+    } else {
+        set_lang(dictionary.en);
+    }
 });
 
 /********************** Extras **********************/
