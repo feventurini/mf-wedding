@@ -1,3 +1,111 @@
+/********************** Localization **********************/
+
+var dictionary = {
+    "en": {
+        "_events": "Events",
+        "_where": "Where",
+        "_venue": "Venues",
+        "_rsvp": "RSVP",
+        "_intro": "We are getting married!",
+        "_subtitle": "9th November '23 and we would like you to be a part of it",
+        "_church": "Church",
+        "_church_blurb": "Some church blurb",
+        "_train": "Train Tour",
+        "_train_blurb": "Some Train blurb",
+        "_dinner": "Dinner and celebration",
+        "_dinner_blurb": "Some celebration blurb",
+        "_dress_code_btn": "Dress Code",
+        "_dress_code_header": "Dress Code",
+        "_dress_code_item": "Formal",
+        "_dress_code_blurb": "Some examples of formalwear from pinterest.",
+        "_map_header": "How do I get there?",
+        "_loc1": "Chiesa di San Benedetto",
+        "_loc1_blurb": "Via dell'Indipendenza, 64, Bologna",
+        "_loc2": "Palazzo Gnudi",
+        "_loc2_blurb": "Via Riva di Reno, 77, Bologna",
+        "_rsvp_header": "RSVP?",
+        "_rsvp_blurb": "We would greatly appreciate if you could RSVP before August 2024",
+        "_email": "Your email",
+        "_plusones": "Husband/Wicsacasfe or kids",
+        "_name": "Your name",
+        "_code": "Invite code",
+        "_confirm": "Yes, that's me!",
+        "_invalid_code": "Sorry! Your invite code is incorrect.",
+        "_server_issue": "Sorry! There is an issue with the server.",
+        "_success": "Thank you!",
+        "_success_blurb": "We are glad to see you join us on our big day." 
+    },
+    "it": {
+        "_events": "Eventi",
+        "_where": "Dove",
+        "_venue": "Location",
+        "_rsvp": "RSVP",
+        "_intro": "Sei invitato al nostro matrimonio!",
+        "_subtitle": "Ci sposeremo il 9 di Novembre 2024 e ti invitiamo a festeggiare con noi!",
+        "_church": "Chiesa",
+        "_church_blurb": "TBD",
+        "_train": "Trenino",
+        "_train_blurb": "TBD",
+        "_dinner": "Cena e ricevimento",
+        "_dinner_blurb": "TBD",
+        "_dress_code_btn": "Dress Code",
+        "_dress_code_header": "Dress Code",
+        "_dress_code_item": "Formale",
+        "_dress_code_blurb": "Qualcosa di formale.",
+        "_map_header": "Come ci arrivo?",
+        "_loc1": "Chiesa di San Benedetto",
+        "_loc1_blurb": "Via dell'Indipendenza, 64, Bologna",
+        "_loc2": "Palazzo Gnudi",
+        "_loc2_blurb": "Via Riva di Reno, 77, Bologna",
+        "_rsvp_header": "RSVP?",
+        "_rsvp_blurb": "Apprezzeremmo una risposta prima di Agosto 2024",
+        "_email": "La tua email",
+        "_plusones": "Compagno/a",
+        "_name": "Il tuo nome",
+        "_code": "Il tuo codice invitato",
+        "_confirm": "Ci sono!",
+        "_invalid_code": "Mi dispiace! Il tuo codice invitato è errato.",
+        "_server_issue": "Mi dispiace! C'è un problema con il server.",
+        "_success": "Grazie!",
+        "_success_blurb": "Ti aspettiamo al nostro matrimonio." 
+    },
+    "pt": {
+        "_events": "O Evento",
+        "_where": "Onde?",
+        "_venue": "Local",
+        "_rsvp": "RSVP",
+        "_intro": "Vamos nos casar",
+        "_subtitle": "no dia 9 de Novembro de 2024, e gostaríamos muito de ter você com a gente",
+        "_church": "Igreja",
+        "_church_blurb": "San Benedetto é uma igreja católica romana no centro de Bologna. Fundada no século XII, a igreja hoje tem fachada (1606) projetada por Giovanni Battista Ballerini. O interior contém obras de Giacomo Cavedoni, Alessandro Tiarini, Cesare Aretusi, Lucio Massari, Ercole Procaccini il Vecchio, Ubaldo Gandolfi e uma escultura de Angelo Gabriello Piò.",
+        "_train": "Tour em Bologna",
+        "_train_blurb": "Some Train blurb",
+        "_dinner": "O jantar e a celebraçao",
+        "_dinner_blurb": "Some celebration blurb",
+        "_dress_code_btn": "Dress Code",
+        "_dress_code_header": "Dress Code",
+        "_dress_code_item": "Formal",
+        "_dress_code_blurb": "Some examples of formalwear from pinterest.",
+        "_map_header": "Como chegar",
+        "_loc1": "Chiesa di San Benedetto",
+        "_loc1_blurb": "Via dell'Indipendenza, 64, Bologna",
+        "_loc2": "Palazzo Gnudi",
+        "_loc2_blurb": "Via Riva di Reno, 77, Bologna",
+        "_rsvp_header": "RSVP?",
+        "_rsvp_blurb": "Por favor, confirme antes do dia 1 de Agosto 2024",
+        "_email": "Seu e-mail",
+        "_plusones": "Acompanhante (s)",
+        "_name": "O seu nome",
+        "_code": "Código do convidado",
+        "_confirm": "Sim, sou eu!",
+        "_invalid_code": "Desculpe! O seu código está incorreto.",
+        "_server_issue": "Desculpe! Estamos com um problema no sistema.",
+        "_success": "Grazie Mille!",
+        "_success_blurb": "Estamos muito contentes de ter você no nosso dia especial." 
+    }
+};
+
+
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
@@ -146,8 +254,7 @@ $(document).ready(function () {
     //     }
     // });
 
-    // $('#add-to-cal').html(myCalendar);
-
+    // $('#add-to-cal').html(myCalendar);    
 
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
@@ -158,7 +265,7 @@ $(document).ready(function () {
 
         if (md5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
             && md5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+            $('#alert-wrapper').html(alert_markup('danger', '<span data-localized="_invalid_code"></span>'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec', data)
                 .done(function (data) {
@@ -173,11 +280,28 @@ $(document).ready(function () {
                 })
                 .fail(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                    $('#alert-wrapper').html(alert_markup('danger', '<span data-localized="_server_issue"></span>'));
                 });
         }
     });
 
+    var set_lang = function (dictionary) {
+        $("[data-localized]").text(function () {
+            var key = $(this).data("localized");
+            if (dictionary.hasOwnProperty(key)) {
+                return dictionary[key];
+            }
+        });
+    };
+
+    $("#lang").on("change", function () {
+        var language = $(this).val().toLowerCase();
+        if (dictionary.hasOwnProperty(language)) {
+            set_lang(dictionary[language]);
+        }
+    });
+
+    set_lang(dictionary.en);
 });
 
 /********************** Extras **********************/

@@ -55,6 +55,7 @@
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
 </head>
 <body id="top">
 <!--[if lt IE 8]>
@@ -69,19 +70,26 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#map">Where</a></li>
+                            <li class="lang-picker"><select id="lang">
+                                <option value="en">🇬🇧</option>
+                                <option value="it">🇮🇹</option>
+                                <option value="pt">🇧🇷</option>
+                            </select></li>
+                            <li><a href="#events"><span data-localized="_events"></span></a></li>
+                            <li><a href="#map"><span data-localized="_where"></span></a></li>
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#map" class="login">Venue</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                            <li><a href="#map" class="login"><span data-localized="_venue"></span></a></li>
+                            <li><a href="#rsvp" class="btn-white btn-small"><span data-localized="_rsvp"></span></a></li>
                         </ul>
+                        
                     </nav>
                 </div>
                 <div class="navicon">
                     <a class="nav-toggle" href="#"><span></span></a>
                 </div>
             </div>
+
         </header>
     </section>
     <div class="container">
@@ -95,7 +103,7 @@
         <div class="row">
             <div class="col-sm-4 hidden-xs"></div>
             <div class="col-sm-4 hidden-xs text-center">
-                <a href="#rsvp"class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
+                <a href="#rsvp"class="btn btn-accent btn-large rsvp-btn"><span data-localized="_rsvp"></span></a></div>
             <div class="col-sm-4 hidden-xs"></div>
         </div>
     </div>
@@ -106,8 +114,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3>We are getting married</h3>
-                <p>9<sup>th</sup> November '23 and we would like you to be a part of it.</p>
+                <h3><span data-localized="_intro"></span></h3>
+                <p><span data-localized="_subtitle"></span></p>
             </div>
         </div>
     </div>
@@ -117,22 +125,22 @@
     <div class="container">
         <div class="row">
             <div class="col-offset-1 col-xs-10 col-sm-10">
-                <h3 class="header">Events</h3>
+                <h3 class="header"><span data-localized="_events"></span></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-offset-1 col-xs-10 col-sm-10">
                 <div class="wp3">
-                    <h5>Church <span class="time">church time</span></h5>
-                    <p>Some church explanation</p>
+                    <h5><span data-localized="_church"></span> <span class="time">church time</span></h5>
+                    <p><span data-localized="_church_blurb"></span></p>
                 </div>
                 <div class="wp5">
-                    <h5>Train tour? <span class="time">train time</span></h5>
-                    <p>Some train tour explanation</p>
+                    <h5><span data-localized="_train"></span><span class="time">train time</span></h5>
+                    <p><span data-localized="_train_blurb"></span></p>
                 </div>
                 <div class="wp5">
-                    <h5>Dinner and party <span class="time">dinner time</span></h5>
-                    <p>Some dinner explanation</p>
+                    <h5><span data-localized="_dinner"></span><span class="time">dinner time</span></h5>
+                    <p><span data-localized="_dinner_blurb"></span></p>
                 </div>
                 </div>
             </div>
@@ -140,7 +148,7 @@
         <div class="row section-padding">
             <div class="col-md-4 offset-md-4 text-center">
                 <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;<span data-localized="_dress_code_btn"></span>
                 </a>
             </div>
         </div>
@@ -152,12 +160,12 @@
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
-                    <h3 class="text-center section-padding">Dress code</h3>
+                    <h3 class="text-center section-padding"><span data-localized="_dress_code_header"></span></h3>
                     <!-- <h5>Wedding <span class="time">6PM-12AM</span></h5> -->
                     <p>
-                        <strong>Formal</strong>
+                        <strong><span data-localized="_dress_code_item"></span></strong>
                         <br>
-                        Some examples of formalwear from pinterest.
+                        <span data-localized="_dress_code_blurb"></span>
                     </p>
                 </div>
             </div><!-- /.modal-content -->
@@ -196,7 +204,7 @@
     <div class="row">
         <div class="col">
             <div class="text-center">
-                <h3>How do I get there?</h3>
+                <h3><span data-localized="_map_header"></span></h3>
             </div>
         </div>
     </div>
@@ -204,8 +212,8 @@
         <div class="offset-1 col-10 offset-md-1 col-md-4">
             <div class="map-content row text-center">
                 <div class="col">
-                    <h5>Chiesa di San Benedetto</h5>
-                    <p>Via dell'Indipendenza, 64, Bologna</p>
+                    <h5><span data-localized="_loc1"></span></h5>
+                    <p><span data-localized="_loc1_blurb"></span></p>
                     <div class="embed-responsive embed-responsive-4by3">
                         <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.6532783800403!2d11.3394502965341!3d44.501770796492956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd49840d9b2d5%3A0x8a96976d684ace5!2sChiesa%20Parrocchiale%20di%20San%20Benedetto!5e0!3m2!1sit!2suk!4v1706997073369!5m2!1sit!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
                     </div>
@@ -215,8 +223,8 @@
         <div class="offset-1 col-10 offset-md-2 col-md-4 ">
             <div class="map-content row text-center">
                 <div class="col">
-                    <h5>Palazzo Gnudi</h5>
-                    <p>Via Riva di Reno, 77, Bologna</p>
+                    <h5><span data-localized="_loc2"></span></h5>
+                    <p><span data-localized="_loc2_blurb"></span></p>
                     <div class="embed-responsive embed-responsive-4by3">
                         <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.8019401183506!2d11.338295077588315!3d44.498724971074594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd49709ee647b%3A0x83ff2193b4c88cf9!2sSeven%20Srl%2F%20Palazzo%20Gnudi!5e0!3m2!1sit!2suk!4v1706996961555!5m2!1sit!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>   
@@ -235,8 +243,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
                     <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
+                        <h3><span data-localized="_success"></span></h3>
+                        <p><span data-localized="_success_blurb"></span></p>
                         <div id="add-to-cal"></div>
                     </div>
                 </div>
@@ -247,42 +255,40 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 offset-md-2 col-md-8">
-                <h3>RSVP?</h3>
-                <p>We would greatly appreciate if you could RSVP before August 2024</p>
+                <h3><span data-localized="_rsvp_header"></span></h3>
+                <p><span data-localized="_rsvp_blurb"></span></p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class="" 
+                                    value="" oninput="this.setAttribute('value', this.value);" required>
+                                <div class="placeholder"><span data-localized="_email"></span></div>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
+                                <i class="fa fa-user"></i><input name="name" class="" 
+                                    value="" oninput="this.setAttribute('value', this.value);" required>
+                                <div class="placeholder"><span data-localized="_name"></span></div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="4" 
+                                    value="" oninput="this.setAttribute('value', this.value);" required>
+                                <div class="placeholder"><span data-localized="_plusones"></span></div>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
+                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" 
+                                    value="" oninput="this.setAttribute('value', this.value);" required>
+                                <div class="placeholder"><span data-localized="_code"></span></div>
                             </div>
                         </div>
                     </div>
@@ -290,8 +296,7 @@
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
+                        <span data-localized="_confirm"></span>
                     </button>
                 </form>
             </div>

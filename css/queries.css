@@ -81,6 +81,7 @@
 
     nav ul.primary-nav li {
         display: block;
+        padding: 0;
     }
 
     nav ul.member-actions li {

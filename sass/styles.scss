@@ -174,6 +174,16 @@ Waypoinsts
 }
 
 /* ==========================================================================
+Language picker
+========================================================================== */
+#lang {
+  border-radius: 40px;
+}
+.lang-picker {
+  padding-right: 25px;
+}
+
+/* ==========================================================================
 Navigation
 ========================================================================== */
 .header-nav.open {
@@ -632,16 +642,18 @@ RSVP form
         border-radius: 6px;
         border: none;
       }
-      input::-webkit-input-placeholder {
-        color: $form-placeholder;
+
+      input:not([value=""]) + .placeholder {
+        display: none;
       }
-      input:-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input::-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input:-ms-input-placeholder {
+      
+      .placeholder {
+        position: absolute;
+        pointer-events: none;
+        top: 15px;
+        bottom: 0;
+        left: 69px;
+        margin: auto;
         color: $form-placeholder;
       }
     }
