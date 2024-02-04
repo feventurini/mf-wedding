@@ -2,9 +2,9 @@
 
 # on:
 #   push:
-#     branches: [ "master" ]
+#     branches: [ "mainline" ]
 #   pull_request:
-#     branches: [ "master" ]
+#     branches: [ "mainline" ]
     
 # permissions:
 #   id-token: write # This is required for requesting the JWT
