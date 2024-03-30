@@ -3,27 +3,27 @@
 var current_lang = "en";
 var dictionary = {
     "en": {
-        "_events": "Events",
+        "_events": "Event",
         "_where": "Where",
         "_venue": "Venues",
         "_rsvp": "RSVP",
         "_intro": "We are getting married!",
-        "_subtitle": "9th November 2024 and we would like you to be a part of it",
-        "_church": "Church",
-        "_church_blurb": "Some church blurb",
-        "_train": "Train Tour",
-        "_train_blurb": "Some Train blurb",
-        "_dinner": "Dinner and celebration",
-        "_dinner_blurb": "Some celebration blurb",
+        "_subtitle": "It is with immense joy that we invite you to celebrate with us the most special day of our lives.<br/>We are getting married on <b><i>9th November 2024</b></i> and we would like you to be a part of it",
+        "_church": "Ceremony",
+        "_dinner": "Reception",
+        "_dinner_time": "after the ceremony",
         "_dress_code_btn": "Dress Code",
         "_dress_code_header": "Dress Code",
         "_dress_code_item": "Formal",
-        "_dress_code_blurb": "Some examples of formalwear from pinterest.",
+        "_dress_code_blurb": "For our wedding, we would prefer full formal/social attire. We kindly ask all our dear guests to dress according to the dress code to make this moment even more memorable. We can't wait to share this magical day with each and every one of you.<br/> \
+        <b>Women</b>: Long or midi dresses<br/> \
+        <b>Men</b>: Suit<br/> \
+        <b>Avoid</b>: Wearing white or dresses with white patterns (bride)",
         "_map_header": "How do I get there?",
         "_loc1": "Chiesa di San Benedetto",
-        "_loc1_blurb": "Via dell'Indipendenza, 64, Bologna",
+        "_loc1_blurb": "<i>Via dell'Indipendenza, 64, Bologna</i>",
         "_loc2": "Palazzo Gnudi",
-        "_loc2_blurb": "Via Riva di Reno, 77, Bologna",
+        "_loc2_blurb": "<i>Via Riva di Reno, 77, Bologna</i>",
         "_rsvp_header": "RSVP?",
         "_rsvp_blurb": "We would greatly appreciate if you could RSVP before August 2024",
         // "_email": "Your email",
@@ -38,27 +38,27 @@ var dictionary = {
         "_loading": "Saving, please wait a moment!"
     },
     "it": {
-        "_events": "Eventi",
+        "_events": "Evento",
         "_where": "Dove",
         "_venue": "Location",
         "_rsvp": "RSVP",
         "_intro": "Sei invitato al nostro matrimonio!",
-        "_subtitle": "Ci sposeremo il 9 di Novembre 2024 e ti invitiamo a festeggiare con noi!",
-        "_church": "Chiesa",
-        "_church_blurb": "TBD",
-        "_train": "Trenino",
-        "_train_blurb": "TBD",
-        "_dinner": "Cena e ricevimento",
-        "_dinner_blurb": "TBD",
+        "_subtitle": "Con grande gioia vi invitiamo a celebrare con noi il giorno più speciale delle nostre vite.<br/>Ci sposeremo il <b><i>9 di Novembre 2024</b></i> e ti invitiamo a festeggiare con noi!",
+        "_church": "Cerimonia",
+        "_dinner_time": "dopo la cerimonia",
+        "_dinner": "Ricevimento",
         "_dress_code_btn": "Dress Code",
         "_dress_code_header": "Dress Code",
         "_dress_code_item": "Formale",
-        "_dress_code_blurb": "Qualcosa di formale.",
+        "_dress_code_blurb": "Per il nostro matrimonio, preferiremmo un abbigliamento formale. Chiediamo gentilmente a tutti i nostri cari invitati di vestirsi secondo il dress code per rendere questo momento ancora più memorabile. Non vediamo l'ora di condividere questo giorno magico con ognuno di voi.<br/> \
+        <b>Donne</b>: Abiti lunghi o midi<br/> \
+        <b>Uomini</b>: Abito<br/> \
+        <b>Evitare</b>: Indossare bianco o abiti con stampa bianca (sposa)",
         "_map_header": "Come ci arrivo?",
         "_loc1": "Chiesa di San Benedetto",
-        "_loc1_blurb": "Via dell'Indipendenza, 64, Bologna",
+        "_loc1_blurb": "<i>Via dell'Indipendenza, 64, Bologna</i>",
         "_loc2": "Palazzo Gnudi",
-        "_loc2_blurb": "Via Riva di Reno, 77, Bologna",
+        "_loc2_blurb": "<i>Via Riva di Reno, 77, Bologna</i>",
         "_rsvp_header": "RSVP?",
         "_rsvp_blurb": "Apprezzeremmo una risposta prima di Agosto 2024",
         // "_email": "La tua email",
@@ -78,22 +78,22 @@ var dictionary = {
         "_venue": "Local",
         "_rsvp": "RSVP",
         "_intro": "Vamos nos casar",
-        "_subtitle": "No dia 9 de Novembro de 2024, e gostaríamos muito de ter você com a gente",
-        "_church": "Igreja",
-        "_church_blurb": "San Benedetto é uma igreja católica romana no centro de Bologna. Fundada no século XII, a igreja hoje tem fachada (1606) projetada por Giovanni Battista Ballerini. O interior contém obras de Giacomo Cavedoni, Alessandro Tiarini, Cesare Aretusi, Lucio Massari, Ercole Procaccini il Vecchio, Ubaldo Gandolfi e uma escultura de Angelo Gabriello Piò.",
-        "_train": "Tour em Bologna",
-        "_train_blurb": "Some Train blurb",
-        "_dinner": "O jantar e a celebraçao",
-        "_dinner_blurb": "Some celebration blurb",
+        "_subtitle": "É com imensa alegria que convidamos vocês para celebrar conosco o dia mais especial de nossas vidas.<br/>O evento acontecerá dia <b><i>9 de Novembro de 2024</b></i>, e gostaríamos muito de ter você com a gente",
+        "_church": "Cerimônia do Casamento",
+        "_dinner_time": "depois da cerimônia",
+        "_dinner": "Recepção do casamento",
         "_dress_code_btn": "Dress Code",
         "_dress_code_header": "Dress Code",
-        "_dress_code_item": "Formal",
-        "_dress_code_blurb": "Some examples of formalwear from pinterest.",
+        "_dress_code_item": "Formal/social completo",
+        "_dress_code_blurb": "Pedimos gentilmente que todos os nossos queridos convidados estejam vestidos de acordo com o dress code para tornar este momento ainda mais memorável. Mal podemos esperar para compartilhar esse dia mágico com cada um de vocês.<br/> \
+        <b>Mulheres</b>: Vestidos longos ou midi<br/> \
+        <b>Homens</b>: Terno<br/> \
+        <b>Evitar</b>: Uso de branco ou vestido com branco estampado (noiva)",
         "_map_header": "Como chegar",
         "_loc1": "Chiesa di San Benedetto",
-        "_loc1_blurb": "Via dell'Indipendenza, 64, Bologna",
+        "_loc1_blurb": "<i>Via dell'Indipendenza, 64, Bologna</i>",
         "_loc2": "Palazzo Gnudi",
-        "_loc2_blurb": "Via Riva di Reno, 77, Bologna",
+        "_loc2_blurb": "<i>Via Riva di Reno, 77, Bologna</i>",
         "_rsvp_header": "RSVP?",
         "_rsvp_blurb": "Por favor, confirme antes do dia 1 de Agosto 2024",
         // "_email": "Seu e-mail",
@@ -297,7 +297,7 @@ $(document).ready(function () {
     });
 
     var set_lang = function (dictionary) {
-        $("[data-localized]").text(function () {
+        $("[data-localized]").html(function () {
             var key = $(this).data("localized");
             if (dictionary.hasOwnProperty(key)) {
                 return dictionary[key];
