@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
-    <!-- <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5"> -->
+
 
     <script>
         // load css files from CDN if local node_modules fail
@@ -76,6 +76,7 @@
                             </select></li>
                             <li><a href="#events"><span data-localized="_events"></span></a></li>
                             <li><a href="#map"><span data-localized="_where"></span></a></li>
+                            <li><a href="#dress-code"><span data-localized="_dress_code"></span></a></li>
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#map" class="login"><span data-localized="_venue"></span></a></li>
@@ -109,7 +110,7 @@
     <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
 </section>
 
-<section id="invitation" class="section-padding">
+<section id="intro" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -120,7 +121,7 @@
     </div>
 </section>
 
-<section class="events section-padding" id="events">
+<section id="events" class="events section-padding">
     <div class="container">
         <div class="row">
             <div class="col-offset-1 col-xs-10 col-sm-10">
@@ -133,39 +134,32 @@
                     <h5><span data-localized="_church"></span> <span class="time"> 15:30</span></h5>
                     <p><span data-localized="_loc1"></span>, <br/><span data-localized="_loc1_blurb"></span></p>
                 </div>
-                <div class="wp5">
+                <div class="wp4">
                     <h5><span data-localized="_dinner"></span><span class="time"> <span data-localized="_dinner_time"></span></h5>
                     <p><span data-localized="_loc2"></span>, <br/><span data-localized="_loc2_blurb"></span></p>
                 </div>
                 </div>
             </div>
         </div>
-        <div class="row section-padding">
-            <div class="col-md-4 offset-md-4 text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;<span data-localized="_dress_code_btn"></span>
-                </a>
+    </div>
+</section>
+
+<section id="dress-code" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-offset-1 col-xs-10 col-sm-10">
+                <h3 class="header"><span data-localized="_dress_code_header"></span></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-offset-1 col-xs-10 col-sm-10">
+                <div class="wp5">
+                    <h5><span data-localized="_dress_code_item"></span></h5>
+                    <p><span class="modal-text-body" data-localized="_dress_code_blurb""></span></p>
+                </div>
             </div>
         </div>
     </div>
-
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding"><span data-localized="_dress_code_header"></span></h3>
-                    <!-- <h5>Wedding <span class="time">6PM-12AM</span></h5> -->
-                    <p>
-                        <strong><span data-localized="_dress_code_item"></span></strong>
-                        <br>
-                        <span class="modal-text-body" data-localized="_dress_code_blurb""></span>
-                    </p>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
 </section>
 
 <!-- <section id="eng-pics" class="section-padding">
@@ -229,8 +223,7 @@
     </div>
 </section>
 
-<section class="rsvp text-center section-padding" id="rsvp">
-
+<section id="rsvp" class="rsvp text-center section-padding">
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -292,7 +285,7 @@
     </div>
 </section>
 
-<footer>
+<footer id="footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center content">

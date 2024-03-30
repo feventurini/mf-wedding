@@ -12,7 +12,7 @@ var dictionary = {
         "_church": "Ceremony",
         "_dinner": "Reception",
         "_dinner_time": "after the ceremony",
-        "_dress_code_btn": "Dress Code",
+        "_dress_code": "Dress Code",
         "_dress_code_header": "Dress Code",
         "_dress_code_item": "Formal",
         "_dress_code_blurb": "For our wedding, we would prefer full formal/social attire. We kindly ask all our dear guests to dress according to the dress code to make this moment even more memorable. We can't wait to share this magical day with each and every one of you.<br/> \
@@ -47,7 +47,7 @@ var dictionary = {
         "_church": "Cerimonia",
         "_dinner_time": "dopo la cerimonia",
         "_dinner": "Ricevimento",
-        "_dress_code_btn": "Dress Code",
+        "_dress_code": "Dress Code",
         "_dress_code_header": "Dress Code",
         "_dress_code_item": "Formale",
         "_dress_code_blurb": "Per il nostro matrimonio, preferiremmo un abbigliamento formale. Chiediamo gentilmente a tutti i nostri cari invitati di vestirsi secondo il dress code per rendere questo momento ancora più memorabile. Non vediamo l'ora di condividere questo giorno magico con ognuno di voi.<br/> \
@@ -82,7 +82,7 @@ var dictionary = {
         "_church": "Cerimônia do Casamento",
         "_dinner_time": "depois da cerimônia",
         "_dinner": "Recepção do casamento",
-        "_dress_code_btn": "Dress Code",
+        "_dress_code": "Dress Code",
         "_dress_code_header": "Dress Code",
         "_dress_code_item": "Formal/social completo",
         "_dress_code_blurb": "Pedimos gentilmente que todos os nossos queridos convidados estejam vestidos de acordo com o dress code para tornar este momento ainda mais memorável. Mal podemos esperar para compartilhar esse dia mágico com cada um de vocês.<br/> \

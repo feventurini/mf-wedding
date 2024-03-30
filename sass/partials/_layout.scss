@@ -2,9 +2,9 @@
 
 $section-padding: 40px 0;
 
-section.intro, section.rsvp section.map {
+section#intro, section#dress-code, section#rsvp {
 	background: $section-light;
 }
-section.events, section.rsvp {
+section#events, section#map, #footer {
 	background: $section-dark;
 }
