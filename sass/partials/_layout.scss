@@ -2,9 +2,9 @@
 
 $section-padding: 40px 0;
 
-section#intro, section#dress-code, section#rsvp {
+section#intro, section#dress-code, section#map, #footer {
 	background: $section-light;
 }
-section#events, section#map, #footer {
+section#events, section#honeymooon, section#rsvp {
 	background: $section-dark;
 }
