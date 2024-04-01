@@ -331,19 +331,35 @@ $(document).ready(function () {
     }
 
     /********************** Honeymoon fund **********************/
-    chunkSize = 3;
-    for (let i = 0; i < honeymoon_items.length; i += chunkSize) {
-        var chunks = honeymoon_items.slice(i, i + chunkSize);
-        $("#honeymoon-carousel-inner").append(
-            `<div class="carousel-item row${i == 0 ? ' active' : ''}">
-                ${chunks.map(item => {
-                    return `<div class="col-4 float-left">
-                        <img src="${item}" class="img-fluid"></a>
-                    </div>`
-                }).join("\n")}
-            </div>`
-        )
+    var create_carousel = function() {
+        var w = window.innerWidth;
+        if (w > 768) {
+            var chunkSize = 3;
+            var col = 'col-4';
+            var carousel_array = honeymoon_items;
+        } else {
+            var chunkSize = 2;
+            var col = 'col-6';
+            var carousel_array = honeymoon_items.length % chunkSize === 1 ? honeymoon_items.slice(0, -1) : honeymoon_items;
+        }
+        
+        $("#honeymoon-carousel-inner").html('');
+        for (let i = 0; i < carousel_array.length; i += chunkSize) {
+            var chunks = carousel_array.slice(i, i + chunkSize);
+            $("#honeymoon-carousel-inner").append(
+                `<div class="carousel-item row${i == 0 ? ' active' : ''}">
+                    ${chunks.map(item => {
+                        return `<div class="${col} float-left">
+                            <img src="${item}" class="img-fluid"></a>
+                        </div>`
+                    }).join("\n")}
+                </div>`
+            )
+        }
     }
+
+    create_carousel();
+    window.addEventListener('resize', create_carousel)
 })
 
 /********************** Extras **********************/
