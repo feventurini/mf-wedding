@@ -20,8 +20,8 @@ var dictionary = {
         <b>Men</b>: Suit<br/>\
         <b>Avoid</b>: Wearing white or dresses with white patterns (bride)",
         "_map_header": "How do I get there?",
-        "_loc1": "Chiesa di San Benedetto",
-        "_loc1_blurb": "<i>Via dell'Indipendenza, 64, Bologna</i>",
+        "_loc1": "Chiesa di San Procolo",
+        "_loc1_blurb": "<i>Via d'Azeglio, 52, Bologna</i>",
         "_loc2": "Palazzo Gnudi",
         "_loc2_blurb": "<i>Via Riva di Reno, 77, Bologna</i>",
         "_honeymoon_header": "Gifts and Honeymoon",
@@ -68,8 +68,8 @@ var dictionary = {
         <b>Uomini</b>: Abito<br/>\
         <b>Evitare</b>: Indossare bianco o abiti con stampa bianca (sposa)",
         "_map_header": "Come ci arrivo?",
-        "_loc1": "Chiesa di San Benedetto",
-        "_loc1_blurb": "<i>Via dell'Indipendenza, 64, Bologna</i>",
+        "_loc1": "Chiesa di San Procolo",
+        "_loc1_blurb": "<i>Via d'Azeglio, 52, Bologna</i>",
         "_loc2": "Palazzo Gnudi",
         "_loc2_blurb": "<i>Via Riva di Reno, 77, Bologna</i>",
         "_honeymoon_header": "Regali e Luna di Miele",
@@ -116,8 +116,8 @@ var dictionary = {
         <b>Homens</b>: Terno<br/>\
         <b>Evitar</b>: Uso de branco ou vestido com branco estampado (noiva)",
         "_map_header": "Como chegar",
-        "_loc1": "Chiesa di San Benedetto",
-        "_loc1_blurb": "<i>Via dell'Indipendenza, 64, Bologna</i>",
+        "_loc1": "Chiesa di San Procolo",
+        "_loc1_blurb": "<i>Via d'Azeglio, 52, Bologna</i>",
         "_loc2": "Palazzo Gnudi",
         "_loc2_blurb": "<i>Via Riva di Reno, 77, Bologna</i>",
         "_honeymoon_header": "Presentes e Lua de Mel",
