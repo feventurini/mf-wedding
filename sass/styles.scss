@@ -506,13 +506,14 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-cutlery {
         font-size: 14px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         margin-left: 20px;
       }
+
       input {
         padding-left: 68px;
         width: 100%;
@@ -521,6 +522,18 @@ RSVP form
         -webkit-border-radius: 6px;
         border-radius: 6px;
         border: none;
+      }
+
+      select {
+        padding-left: 68px;
+        width: 100%;
+        height: 100%;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        border: none;
+        background-color: white;
+        color: $txt-primary;
       }
 
       input:not([value=""]) + .placeholder {
@@ -532,7 +545,7 @@ RSVP form
         pointer-events: none;
         top: 15px;
         bottom: 0;
-        left: 69px;
+        left: 68px;
         margin: auto;
         color: $form-placeholder;
       }

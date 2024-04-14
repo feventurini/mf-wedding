@@ -33,10 +33,14 @@ var dictionary = {
         <br/>\
         We can't wait to share this special day with all of you.<br/>\
         With love, Marcella & Federico",
-        "_rsvp_header": "RSVP?",
+        "_rsvp_header": "RSVP",
         "_rsvp_blurb": "We would greatly appreciate if you could RSVP before August 2024",
         // "_email": "Your email",
-        "_plusones": "Plus ones or kids",
+        "_plusones": "Plus ones / kids",
+        "_diet": "Dietary requirements",
+        "_na": "N/A",
+        "_vegetarian": "Vegetarian",
+        "_vegan": "Vegan",
         "_name": "Your name",
         "_code": "Invite code",
         "_confirm": "Yes, that's me!",
@@ -77,10 +81,14 @@ var dictionary = {
         <br/>\
         Non vediamo l'ora di condividere questo giorno speciale con tutti voi.<br/>\
         Con amore, Marcella & Federico",
-        "_rsvp_header": "RSVP?",
+        "_rsvp_header": "RSVP",
         "_rsvp_blurb": "Apprezzeremmo una risposta prima di Agosto 2024",
         // "_email": "La tua email",
-        "_plusones": "Più uno e bambini",
+        "_plusones": "Accompagnatori / bambini",
+        "_diet": "Restrizioni alimentari",
+        "_na": "N/A",
+        "_vegetarian": "Vegetariano",
+        "_vegan": "Vegano",
         "_name": "Il tuo nome",
         "_code": "Il tuo codice invitato",
         "_confirm": "Ci sono!",
@@ -95,7 +103,7 @@ var dictionary = {
         "_venue": "Local",
         "_honeymoon": "Presentes",
         "_rsvp": "RSVP",
-        "_intro": "Vamos nos casar",
+        "_intro": "Vamos nos casar!",
         "_subtitle": "É com imensa alegria que convidamos vocês para celebrar conosco o dia mais especial de nossas vidas.<br/>O evento acontecerá dia <b><i>9 de Novembro de 2024</b></i>, e gostaríamos muito de ter você com a gente",
         "_church": "Cerimônia do Casamento",
         "_dinner_time": "depois da cerimônia",
@@ -120,10 +128,14 @@ var dictionary = {
         Se vocês desejarem nos presentear de alguma forma para tornar essa viagem ainda mais especial, criamos duas contas no PayPal e Monzo para vocês participarem desse momento. Não hesitem em entrar em contato conosco se tiverem alguma dúvida.<br/>\
         Mal podemos esperar para compartilhar esse dia inesquecível com todos vocês.<br/>\
         Com carinho, Marcella & Federico",
-        "_rsvp_header": "RSVP?",
+        "_rsvp_header": "RSVP",
         "_rsvp_blurb": "Por favor, confirme antes do dia 1 de Agosto 2024",
         // "_email": "Seu e-mail",
         "_plusones": "Acompanhante (s)",
+        "_diet": "Restrição alimentar",
+        "_na": "N/A",
+        "_vegetarian": "Vegetariano",
+        "_vegan": "Vegano",
         "_name": "O seu nome",
         "_code": "Código do convidado",
         "_confirm": "Sim, sou eu!",
@@ -284,6 +296,7 @@ $(document).ready(function () {
                 'name': $(this).find('input[name="name"]').val(),
                 'extras': $(this).find('input[name="extras"]').val(),
                 'invite_code': md5_hash,
+                'diet': $(this).find('select[name="diet"]').val(),
             };
 
             $.post('https://script.google.com/macros/s/AKfycbwuHpPyRUo5paqOWbDc-rwG3_wVHxb-IhqkCgWo4udo2K4VwgmRcUF__OO-P3d6gyrZ/exec', data)

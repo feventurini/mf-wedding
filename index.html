@@ -275,16 +275,30 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="4" 
                                     value="" oninput="this.setAttribute('value', this.value);" required>
                                 <div class="placeholder"><span data-localized="_plusones"></span></div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" 
+                                <i class="fa fa-cutlery"></i><select class="custom-select" name="diet" required>
+                                    <option value="na" selected data-localized="_na"></option>
+                                    <option value="vegetarian" data-localized="_vegetarian"></option>
+                                    <option value="vegan" data-localized="_vegan"></option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i>
+                                <input type="number" name="invite_code" id="invite_code" class="" min="0" 
                                     value="" oninput="this.setAttribute('value', this.value);" required>
                                 <div class="placeholder"><span data-localized="_code"></span></div>
                             </div>
