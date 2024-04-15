@@ -27,7 +27,7 @@ var dictionary = {
         "_honeymoon_header": "Gifts and Honeymoon",
         "_honeymoon_blurb": "Dear friends and family,<br/>\
         <br/>\
-        We are very happy to share our special moment with you! Your presence at our wedding is the greatest gift we could receive. As we have been together for six years and share our home (and a little cat), we have decided not to create a traditional gift list. Instead, we are planning a very special honeymoon to celebrate our life together. We will revisit our favorite country, Japan, where we got engaged, and also explore other destinations, such as South Korea, Honk Kong.<br/>\
+        We are very happy to share our special moment with you! Your presence at our wedding is the greatest gift we could receive. As we have been together for six years and share our home (and a little cat), we have decided not to create a traditional gift list. Instead, we are planning a very special honeymoon to celebrate our life together. We will revisit our favorite country, Japan, where we got engaged, and also explore other destinations, such as South Korea, Hong Kong.<br/>\
         <br/>\
         If you wish to give us a gift in some way to make this trip even more special, we have created two accounts (PayPal and bank via Monzo) for contributions to this moment. Please do not hesitate to contact us if you have any questions.<br/>\
         <br/>\
