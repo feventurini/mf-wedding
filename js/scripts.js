@@ -24,11 +24,11 @@ var dictionary = {
         "_loc1_blurb": "<i>Via d'Azeglio, 52, Bologna</i>",
         "_loc2": "Palazzo Gnudi",
         "_loc2_blurb": "<i>Via Riva di Reno, 77, Bologna</i>",
-        "_parking_blurb": "Sia chiesa che palazzo per il ricevimento sono in centro, ecco la lista di alcuni parcheggi in centro:",
-        "_parking_1": "Parcheggio Riva Reno [<a href=\"https://www.apcoa.it/parcheggi-in/bologna/riva-reno/\" target=\"_blank\">sito</a>, <a href=\"https://maps.app.goo.gl/JYeWiehB9e6RwC7p7\" target=\"_blank\">maps</a>] <i>(24h, 10 minuti dal Palazzo, 20 minuti dalla Chiesa)</i>",
-        "_parking_2": "Parcheggio Piazza VIII Agosto [<a href=\"https://www.apcoa.it/parcheggi-in/bologna/piazza-viii-agosto/\" target=\"_blank\">sito</a>, <a href=\"https://maps.app.goo.gl/nAJKa42V4XYUbE9k9\" target=\"_blank\">maps</a>] <i>(24h, 5 minuti dal Palazzo, 15 minuti dalla Chiesa)</i>",
-        "_parking_3": "Parcheggio ex-Staveco [<a href=\"https://bologna.iovivo.eu/aperti-a-tutti/\" target=\"_blank\">sito</a>, <a href=\"https://maps.app.goo.gl/1UScoiB2bu8m2miR6\" target=\"_blank\">maps</a>] <i>(24h, 25 minuti dal Palazzo, 10 minuti dalla Chiesa)</i>",
-        "_parking_4": "Garage Marconi [<a href=\"https://www.parkopedia.it/parking/carpark/garage_marconi/40122/bologna/?arriving=202410272030&leaving=202410272230\" target=\"_blank\">sito</a>, <a href=\"https://maps.app.goo.gl/uEtK2ntdxWYzTRpu8\" target=\"_blank\">maps</a>] <i>(ZTL, fino all'01:00, 2 minuti dal Palazzo, 18 minuti dalla Chiesa)</i>",
+        "_parking_blurb": "Both the church and the reception venue are located in the city center; here is a list of some parking options in the area:",
+        "_parking_1": "Riva Reno Parking [<a href=\"https://www.apcoa.it/parcheggi-in/bologna/riva-reno/\" target=\"_blank\">site</a>, <a href=\"https://maps.app.goo.gl/JYeWiehB9e6RwC7p7\" target=\"_blank\">maps</a>] <i>(24h, 10 minutes from the venue, 20 minutes from the church)</i>",
+        "_parking_2": "Piazza VIII Agosto Parking [<a href=\"https://www.apcoa.it/parcheggi-in/bologna/piazza-viii-agosto/\" target=\"_blank\">site</a>, <a href=\"https://maps.app.goo.gl/nAJKa42V4XYUbE9k9\" target=\"_blank\">maps</a>] <i>(24h, 5 minutes from the venue, 15 minutes from the church)</i>",
+        "_parking_3": "Ex-Staveco Parking [<a href=\"https://bologna.iovivo.eu/aperti-a-tutti/\" target=\"_blank\">site</a>, <a href=\"https://maps.app.goo.gl/1UScoiB2bu8m2miR6\" target=\"_blank\">maps</a>] <i>(24h, 25 minutes from the venue, 10 minutes from the church)</i>",
+        "_parking_4": "Garage Marconi [<a href=\"https://www.parkopedia.it/parking/carpark/garage_marconi/40122/bologna/?arriving=202410272030&leaving=202410272230\" target=\"_blank\">site</a>, <a href=\"https://maps.app.goo.gl/uEtK2ntdxWYzTRpu8\" target=\"_blank\">maps</a>] <i>(ZTL, open until 01:00, 2 minutes from the venue, 18 minutes from the church)</i>",
         "_honeymoon_header": "Gifts and Honeymoon",
         "_honeymoon_blurb": "Dear friends and family,<br/>\
         <br/>\
@@ -77,6 +77,11 @@ var dictionary = {
         "_loc1_blurb": "<i>Via d'Azeglio, 52, Bologna</i>",
         "_loc2": "Palazzo Gnudi",
         "_loc2_blurb": "<i>Via Riva di Reno, 77, Bologna</i>",
+        "_parking_blurb": "Sia la Chiesa che il Palazzo per il ricevimento sono in centro, ecco la lista di alcuni parcheggi in centro:",
+        "_parking_1": "Parcheggio Riva Reno [<a href=\"https://www.apcoa.it/parcheggi-in/bologna/riva-reno/\" target=\"_blank\">sito</a>, <a href=\"https://maps.app.goo.gl/JYeWiehB9e6RwC7p7\" target=\"_blank\">maps</a>] <i>(24h, 10 minuti dal Palazzo, 20 minuti dalla Chiesa)</i>",
+        "_parking_2": "Parcheggio Piazza VIII Agosto [<a href=\"https://www.apcoa.it/parcheggi-in/bologna/piazza-viii-agosto/\" target=\"_blank\">sito</a>, <a href=\"https://maps.app.goo.gl/nAJKa42V4XYUbE9k9\" target=\"_blank\">maps</a>] <i>(24h, 5 minuti dal Palazzo, 15 minuti dalla Chiesa)</i>",
+        "_parking_3": "Parcheggio ex-Staveco [<a href=\"https://bologna.iovivo.eu/aperti-a-tutti/\" target=\"_blank\">sito</a>, <a href=\"https://maps.app.goo.gl/1UScoiB2bu8m2miR6\" target=\"_blank\">maps</a>] <i>(24h, 25 minuti dal Palazzo, 10 minuti dalla Chiesa)</i>",
+        "_parking_4": "Garage Marconi [<a href=\"https://www.parkopedia.it/parking/carpark/garage_marconi/40122/bologna/?arriving=202410272030&leaving=202410272230\" target=\"_blank\">sito</a>, <a href=\"https://maps.app.goo.gl/uEtK2ntdxWYzTRpu8\" target=\"_blank\">maps</a>] <i>(ZTL, fino all'01:00, 2 minuti dal Palazzo, 18 minuti dalla Chiesa)</i>",
         "_honeymoon_header": "Regali e Luna di Miele",
         "_honeymoon_blurb": "Cari amici e familiari,<br/>\
         <br/>\
@@ -125,6 +130,11 @@ var dictionary = {
         "_loc1_blurb": "<i>Via d'Azeglio, 52, Bologna</i>",
         "_loc2": "Palazzo Gnudi",
         "_loc2_blurb": "<i>Via Riva di Reno, 77, Bologna</i>",
+        "_parking_blurb": "Tanto a igreja quanto o local da recepção estão no centro; aqui está uma lista de algumas opções de estacionamento na área:",
+        "_parking_1": "Estacionamento Riva Reno [<a href=\"https://www.apcoa.it/parcheggi-in/bologna/riva-reno/\" target=\"_blank\">site</a>, <a href=\"https://maps.app.goo.gl/JYeWiehB9e6RwC7p7\" target=\"_blank\">maps</a>] <i>(24h, 10 minutos do local da recepção, 20 minutos da igreja)</i>",
+        "_parking_2": "Estacionamento Piazza VIII Agosto [<a href=\"https://www.apcoa.it/parcheggi-in/bologna/piazza-viii-agosto/\" target=\"_blank\">site</a>, <a href=\"https://maps.app.goo.gl/nAJKa42V4XYUbE9k9\" target=\"_blank\">maps</a>] <i>(24h, 5 minutos do local da recepção, 15 minutos da igreja)</i>",
+        "_parking_3": "Estacionamento Ex-Staveco [<a href=\"https://bologna.iovivo.eu/aperti-a-tutti/\" target=\"_blank\">site</a>, <a href=\"https://maps.app.goo.gl/1UScoiB2bu8m2miR6\" target=\"_blank\">maps</a>] <i>(24h, 25 minutos do local da recepção, 10 minutos da igreja)</i>",
+        "_parking_4": "Garagem Marconi [<a href=\"https://www.parkopedia.it/parking/carpark/garage_marconi/40122/bologna/?arriving=202410272030&leaving=202410272230\" target=\"_blank\">site</a>, <a href=\"https://maps.app.goo.gl/uEtK2ntdxWYzTRpu8\" target=\"_blank\">maps</a>] <i>(ZTL, aberto até 01:00, 2 minutos do local da recepção, 18 minutos da igreja)</i>",
         "_honeymoon_header": "Presentes e Lua de Mel",
         "_honeymoon_blurb": "Queridos amigos e familiares,<br/>\
         <br/>\
